@@ -1,0 +1,205 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Jan 09 2023 22:29:40 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="631cfa0777b683096baaff68" data-wf-site="631cfa0777b683f3a6aaff67">
+<head>
+  <meta charset="utf-8">
+  <title>CircleCubeangle</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/circubangle.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+  <div class="div-block-3">
+    <h2 class="heading-6">
+      <a href="#Rules" class="link">Rules</a>
+    </h2>
+    
+  </div>
+  <div id="particles-js" class="section wf-section">
+    <h1 class="heading">CircleCubeAngle</h1>
+    <div class="div-block">
+      <div class="html-embed w-embed w-iframe"><iframe frameborder="0" src="https://itch.io/embed-upload/5865560?color=333333" allowfullscreen="" width="960" height="660">
+          <a href="https://zzzgames.itch.io/circubangle">Play Circubangle on itch.io</a>
+        </iframe></div>
+    </div>
+  </div>
+  <div id="Rules" class="section-2 wf-section">
+    <div class="w-container">
+      <h1>Rules</h1>
+      <div class="div-block-2"></div>
+      <h2>Objects/pieces</h2>
+      <ul role="list" class="list">
+        <li class="list-item-2">There are 3 objects/pieces: circle, cube, and triangle.</li>
+        <li class="list-item">They can only be placed vertically in a box in this order circle, cube, and triangle. So circle will always be on layer 1, cube will always be on layer 2 and triangle will always be on layer 3. A box reference to a box of layers 1,2,3.</li>
+        <li>You get to place one object at a time and then it&#x27;s the opponents turn.</li>
+      </ul>
+      <h2>How to win</h2>
+      <ul role="list" class="list">
+        <li class="list-item-2">You can win by getting a vertical or horizontal diagonal or in-box streak.</li>
+        <li class="list-item">The vertical or horizontal and diagonal streaks consist of the same type of piece, while the in-box streaks consists of 3 in a row with all of the different types of pieces.</li>
+        <li>You need to get two streaks to win.</li>
+      </ul>
+      <h3 class="heading-7">IMPORTANT: In the example pictures the in-box streaks will be referred to as vertical streaks while the outer-box streaks will be referred to as horizontal streaks</h3>
+      <h4>Example of outer-box (horizontal) streak</h4>
+      <div class="box-image"><img src="images/dwafwafwa.png" loading="lazy" alt="" class="image-2"></div>
+      <h4>Example of in-box (vertical ) streak</h4>
+      <div class="box-image"><img src="images/3.png" loading="lazy" alt="" class="image-3"></div>
+      <h2>Overlapping pieces</h2>
+      <ul role="list" class="list">
+        <li class="list-item-2">You can put the same type of piece over your opponent&#x27;s piece if it&#x27;s not a triangle or if it does not have anything above it. (This is called overlapping)</li>
+        <li class="list-item">You can&#x27;t get a outer-box streak with overlapping pieces.</li>
+        <li>You can get a in-box streak with overlapping pieces.</li>
+        <li>You can overlap your opponent&#x27;s streak, but the point your opponent got from the streak will not go away.</li>
+        <li>You cannot overlap overlapped pieces</li>
+      </ul>
+      <h3 class="heading-8">Exmaple of invalid overlapping outer-box (horizontal) streak</h3>
+      <div class="box-image"><img src="images/Screenshot-2023-01-03-225433.png" loading="lazy" sizes="433px" srcset="images/Screenshot-2023-01-03-225433-p-500.png 500w, images/Screenshot-2023-01-03-225433.png 651w" alt="" class="image"></div>
+      <h4>Example of valid overlapping in-box (vertical) streak</h4>
+      <div class="box-image"><img src="images/4.png" loading="lazy" sizes="433px" srcset="images/4-p-500.png 500w, images/4.png 641w" alt="" class="image"></div>
+      <h2>Bugs</h2>
+      <h3 class="heading-3">You have to press the restart button two times to restart. And some times after playing a couple of games the scoring system will just bug out but yeah, just refresh the site if that happens.</h3>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=631cfa0777b683f3a6aaff67" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <style>
+.particles-js-canvas-el {
+position: absolute;
+max-width: 100%;
+max-height:100%;
+left: 0%;
+top: 0%;
+right: 0%;
+bottom: 0%;
+z-index: 0;
+}</style>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+particlesJS(
+    // this is the ID your particles container needs to have
+	"particles-js",
+// Visit https://vincentgarreau.com/particles.js/ to get your code
+// Paste your code directly underneath this line
+{
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#8a47eb"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.49716301422833176,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#5a00ff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 267.9854800594439,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 199.8001998001998,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+}
+)
+</script>
+</body>
+</html>
